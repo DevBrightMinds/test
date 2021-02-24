@@ -1,0 +1,35 @@
+{
+  "name": "update",
+  "version": "1.0.0",
+  "description": "Hello World",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . update --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=Aramex --version-string.FileDescription=CE --version-string.ProductName=\"Update\"",
+    "electron-publish": "electron-builder"
+  },
+  "keywords": [],
+  "author": "aramex",
+  "license": "ISC",
+  "dependencies": {
+    "electron-log": "^4.3.1",
+    "electron-progressbar": "^2.0.0",
+    "electron-updater": "^4.3.5",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "nodejs-file-downloader": "^4.2.0",
+    "uaup-js": "0.0.22",
+    "unzipper": "^0.10.11"
+  },
+  "build": {
+    "appId": "update",
+    "win": {
+      "icon": ""
+    }
+  },
+  "devDependencies": {
+    "electron": "^11.2.3",
+    "electron-builder": "^22.9.1",
+    "electron-packager": "^15.2.0"
+  }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Electron Updater Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    Current version: <span id="version">vX.Y.Z</span>
+    <div id="messages"></div>
+    <button onclick="open()">Open</button>
+    <script type="text/javascript">
+        function open() {
+            alert("hello");
+            //ipcRenderer.send("open");
+        }
+    </script>
+</body>
+
+</html>
